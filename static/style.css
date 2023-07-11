@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Satoshi";
+	src: url("Satoshi-Variable.ttf");
+}
+* {
+	font-family: "Satoshi";
+}
+modal {
+	transition: opacity 0.25s ease;
+}
+body.modal-active {
+	overflow-x: hidden;
+	overflow-y: visible !important;
+}
+body {
+	@apply min-h-[100svh] flex flex-col justify-center items-center gap-6;
+}
+
+label {
+	@apply text-3xl lg:text-6xl font-normal;
+}
+input {
+	@apply text-xl shadow appearance-none border rounded w-60 h-auto py-2 px-2 text-gray-700 leading-tight focus:outline-none;
+}
