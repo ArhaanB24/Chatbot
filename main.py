@@ -42,7 +42,10 @@ def text():
     if msg:
         for x in acclst:
             acc = cl.user_id_from_username(x)
-            cl.direct_send(text=msg,user_ids=[acc])
+            try:
+                cl.direct_send(text=msg,user_ids=[acc])
+            except instagrapi.exceptions.UserNotFound:
+                flash("User not found please enter valid username")
     return render_template("text.html")
 
 
