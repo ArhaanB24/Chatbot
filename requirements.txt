@@ -4,7 +4,7 @@ charset-normalizer==3.2.0
 click==8.1.4
 Flask
 idna==3.4
-instagrapi==1.17.13
+instagrapi
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.3
