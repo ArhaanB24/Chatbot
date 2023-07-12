@@ -6,14 +6,8 @@
 		<title>Chatbot</title>
 		<link
 			rel="stylesheet"
-			href="{{ url_for('static', filename='style.css') }}"
-		/>
-		<link
-			rel="stylesheet"
 			href="{{ url_for('static', filename='tailwind.css') }}"
 		/>
-		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
 	</head>
 	<body>
 		<button
@@ -29,6 +23,7 @@
 			<div
 				class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
 			></div>
+			<!-- Above div can be changed to change the width of modal -->
 
 			<div
 				class="modal-container bg-white w-screen lg:w-1/3 h-auto mx-auto rounded shadow-lg z-50 overflow-y-auto"
@@ -52,7 +47,7 @@
 
 				<!-- Add margin if you want to see some of the overlay behind the modal-->
 				<div class="modal-content py-4 text-left px-6">
-					<!--Title-->
+					<!--Title of modal-->
 					<div class="flex justify-between items-center pb-3">
 						<p class="text-5xl font-bold">Disclaimer</p>
 						<div class="modal-close cursor-pointer z-50">
@@ -75,10 +70,10 @@
 						Your information won't be stored as the developer
 						doesn't know how to work with databases! Enter your
 						Instagram username and password, please shut and do not
-						open your Instagram untill you are done using the
-						website. Instagram may ask for verification
-						please co-operate and do not worry about a device name
-						"6T" signing in
+						open your Instagram until you are done using the website
+						you may. Instagram may ask for verification please
+						co-operate and do not worry about a device name "6-T"
+						signing in
 					</p>
 
 					<!--Footer-->
@@ -92,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- Script for opening and closing the modal on click and always opening it on page load -->
 		<script>
 			var openmodal = document.querySelectorAll(".modal-open");
 			for (var i = 0; i < openmodal.length; i++) {
